@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    
+    <link rel="stylesheet" href="scrollytelling.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Scrollytelling</title>
+</head>
+<body>
+        <div class="navBar">
+            <div class="navBarLeft">
+                <div class="navBarLink">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navBarLink active-navBarLink">
+                    <a href="scrollytelling.html">BTC</a>
+                </div>
+                <div class="navBarLink">
+                    <a href="credits.html">credits</a>
+                </div>
+            </div>
+            <div class="navBarRight">
+                <div class="navBarLink">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="tooltip" style="z-index:3;position: absolute;top: 430px;left: 30px;width: 130px;height: 35px;border: 1px solid black;
+                background-color: lightgrey;opacity: 0.8;font-family: 'Courier New', Courier, monospace;font-size: 10px;"></div>
+            <h1>A brief hiscrolly of Bitcoin</h1>
+            
+            <div class="scrollytellingBox show" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+            <h2>2009-2012:From humble beginnings</h2>
+            </div>
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p>On 22/5/2010, the first bitcoin transaction occured in Florida. Its value was negotiated by individuals on the bitcoin forum.
+                            Ultimately, a man was able to purchase two Papa John's pizzas for 10.000 BTC. The value of the pizzas 
+                            was 25$.That transaction essentially established the initial real-world price or value of bitcoin at 4 bitcoins per penny. 
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;"><img src="scrollytelingImages\genesisBlock.JPG" ></div> 
+                </div>
+            </div>  
+
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p>Bitcoin was created in 2009 as the first decentralized currency to run on Blockchain technology.
+                            It was introduced in a white paper published by someone with the pseudoname Satoshi Nakamoto.
+                            Bitcoin would allow users to conduct transactions based on digital signatures and coins.
+                            On 3/1/2009, the bitcoin network came into existence with Satoshi Nakamoto mining the genesis block of bitcoin (shown below).
+                            At that time, Bitcoin had no real monetary value. 
+                        </p>
+                    </div>
+                    <div id="pizzaImage" style="flex: 50%;padding: 10px;align-items: center;"><img src="scrollytelingImages\pizza.JPG" ></div> 
+                </div>
+            </div>  
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p>Since then, Bitcoin slowly but steadily became more popular. In 2010 it became easier
+                            to buy, sell and trade. More and more organsations started accepting Bitcoin as a 
+                            payment method. These include E.F.F, a non-profit group, Wikileaks and WordPress.
+                            The increased amount of exchanges helped Bitcoin to be priced against the U.S dollar.
+                            By the end of April 2011, one BTC was equal to 1$.
+
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;"><img src="scrollytelingImages\BTCeqDollar.JPG" ></div> 
+                </div>
+            </div>  
+
+            <div class="scrollytellingBox" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+            <h2>2013:Birth of a titan</h2>
+            </div>
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p> 2013 proved to be a decisive year for Bitcoin's price.
+                            The digital currency began the year trading at 13.40$. From there,
+                            its price rose steadily, reching an all time high of 220$. However,
+                            when payment processors BitInstant and Mt.Gox experienced processing delays due to insufficient capacity,
+                            its price radically declined, dropping to 76$. This drop was very temporary,
+                            as it returned to 160$ within a day.  Nonetheless, this was its first price bubble.
+                            During mid and late 2013, even more companies and organisations started
+                            accepting it. Aditionally, many countries such as the U.S.A and Germany
+                            starting passing legislations and acknowledging it as a form of
+                            currency.
+                        </p>
+                    </div>
+                    <div  style="flex: 50%;padding: 10px;align-items: center;"><img src="scrollytelingImages\2013.JPG" ></div> 
+                </div>
+            </div>  
+
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p> In October 2013 the FBI seized roughly 26,000 BTC from website Silk Road,
+                            inadvertently linking Bitcoin (and other cryptocurrencies) to illegal
+                            activities. Even though this could lead to a price drop,a rally
+                            occurred, partially fueled by the launch of the first BTC ATMs and 
+                            its acceptance by Chinese Internet giant Baihu. By December, it had spiked to 1156$. 
+                            But when Alan Greenspan, economist and  Chair of the Federal Reserve,
+                            referred to it as a "bubble", its price would crash once more.
+
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <img src="scrollytelingImages\2013.JPG" >
+                        <canvas id="_scrollytellingGraph1" style="width: 100px;height: 200px;position: absolute; top: 200px; right:100px; border: 1px solid red;"></canvas>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="scrollytellingBox" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+                <h2>2014:A losing battle?</h2>
+            </div>
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p> The beginning of 2014 seemed promising for Bitcoin as it was steadily growing 
+                            once again. However, everything was about to crash. Mt Gox, a large crypto exchange, claimed That
+                            744.000 bitcoins (worth 480 million dollars at that time) had been stolen. It filled for bankruptcy
+                            and started liquidating its assets in April 2014.From 1 February 2014 until the end of March, during the period of Mt. Gox
+                            problems, the value of bitcoin declined by 36%.And yet, there was still hope. Huge corporations like Microsoft
+                            and Zynga started accepting bitcoins for their services and assets, keeping its price above 300$. 
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <img src="scrollytelingImages\2014.JPG" ></div> 
+                        <canvas id="_scrollytellingGraph2" style="width: 100px;height: 200px;position: absolute; top: 200px; left:150px; border: 1px solid red;"></canvas>
+                    
+                </div>
+            </div>
+
+            <div class="scrollytellingBox" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+                <h2>2015-2016: The slump years</h2>
+            </div>
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p> History has a way of repeating itself and just like Mt.Gox, another huge Bitcoin exchange based in
+                            Luxembourg, called Bitstamp had 19.000 bitcoins stolen. As a result, its services were suspended
+                            for a week and bitcoins price fell to less than 200$. Even though many nobel winners denounced
+                            Bitcoin, more computer scientists and programmers started getting interested in investing on it.
+                            The academic papers about Bitcoin had grown from 424 in 2012 to 3580 in 2016.     
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <img src="scrollytelingImages\2015_2016.JPG" ></div>           
+                        <canvas id="_scrollytellingGraph31" style="width: 40px;height: 80px;position: absolute; bottom: 100px; left:150px; border: 1px solid red;"></canvas>
+                        <canvas id="_scrollytellingGraph32" style="width: 40px;height: 90px;position: absolute; top: 280px; right:220px; border: 1px solid red;"></canvas>
+                    
+                </div>
+            </div>
+
+            <div class="scrollytellingBox" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+                <h2>2017 boom and 2018 crash</h2>
+            </div>
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p> The start of 2017 was extremely promising for Bitcoin. In March of 2017 the price of one bitcoin has surpassed the value of an ounce 
+                            of gold for the first time.Then, something phenomenal happened. In just a few monts,
+                            Bitcoin reached its peak price of 19.497$. Although it is currently unkown why
+                            this surge happened, it is speculated that it was caused by market manipulation
+                            and a cryptocurrency "whale" (a huge investor). However, just like the internet
+                            bubble of the 2000's, the bubble burst and its price dropped to 6.955$ in the beginning
+                            of February 2018. The volatility of its price lead to an exodus, further decreasing
+                            its value.
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <img src="scrollytelingImages\2017_2018.JPG" ></div>           
+                        <canvas id="_scrollytellingGraph4" style="width: 80px;height: 230px;position: absolute; bottom: 150px; right:333px; border: 1px solid red;"></canvas>
+                </div>
+            </div>
+            <div class="scrollytellingBox" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+                <h2>The current state</h2>
+            </div>
+
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p> During 2019 Bitcoins price increased slowly but steadily.
+                            In 26/6/2019 it reached 13.016$ and hopes of another surge 
+                            were rekindled. However, this never happened. Bitcoin closed the
+                            year with a value of 6.985$. In early 2020, just as the economy was
+                            shutting down due to the pandemic, Bitcoins's price dropped by 50%
+                            in just a few days. However, this loss would be restored by mid 2020.
+                            In 16/12/2020 Bitcoin closed the market at 21.311$ reaching an all time high.
+                            Ultimately, in early 2021 Bitcoin's price witnessed another boom and in 21/2/2021
+                            had a price of 57.540$.
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <img src="scrollytelingImages\2019.JPG" ></div>           
+                        <canvas id="_scrollytellingGraph51" style="width: 30px;height: 50px;position: absolute; bottom: 85px; right:333px; border: 1px solid red;"></canvas>
+                </div>
+            </div>
+
+            <div class="scrollytellingBox" style="padding: 40px;height: 30px;width: 600px; box-shadow: none;">
+                <h2>The future of Bitcoin</h2>
+            </div>
+            <div class="scrollytellingBox">
+                <div class="scrollytellingFlexContainer">
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <p>But what does the future of Bitcoin hold? No one knows for certain.
+                            There are those who claim that another crush is imminent, just like 2017.
+                            But the popular opinion is different and economists claim that its price will
+                            grow steadily and surpass the 6-digit limit by 2022.  
+                        </p>
+                    </div>
+                    <div style="flex: 50%;padding: 10px;align-items: center;">
+                        <img src="scrollytelingImages\2021.JPG" ></div>           
+                    </div>
+            </div>
+
+            
+        </div>
+
+    <script src="scrollytelling.js"></script>
+</body>
+<script type="text/javascript">
+    $('#tooltip').hide();
+    
+    $('#_scrollytellingGraph1').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#_scrollytellingGraph1').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#_scrollytellingGraph1').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('The second Bitcoin bubble');
+            }
+        )
+
+
+        $('#_scrollytellingGraph1').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#_scrollytellingGraph1').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+
+        $('#_scrollytellingGraph2').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#_scrollytellingGraph2').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#_scrollytellingGraph2').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('The effects of Mt.Gox&apos;s hacking and file for bankruptcy');
+            }
+        )
+
+
+        $('#_scrollytellingGraph2').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#_scrollytellingGraph2').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+        
+
+        $('#_scrollytellingGraph31').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#_scrollytellingGraph31').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#_scrollytellingGraph31').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('The effects of Bitstamp&apos;s hacking');
+            }
+        )
+
+
+        $('#_scrollytellingGraph31').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#_scrollytellingGraph31').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+
+
+        $('#_scrollytellingGraph32').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#_scrollytellingGraph32').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#_scrollytellingGraph32').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('In August 2016 Bitfinex was hacked (60million$)');
+            }
+        )
+
+
+        $('#_scrollytellingGraph32').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#_scrollytellingGraph32').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+
+        $('#_scrollytellingGraph4').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#_scrollytellingGraph4').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#_scrollytellingGraph4').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('In 4 months its price increased by 69% and decreased by 64%');
+            }
+        )
+
+
+        $('#_scrollytellingGraph4').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#_scrollytellingGraph4').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+
+        $('#_scrollytellingGraph51').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#_scrollytellingGraph51').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#_scrollytellingGraph51').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('50% drop due to COVID-19');
+            }
+        )
+
+
+        $('#_scrollytellingGraph51').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#_scrollytellingGraph51').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+
+
+
+        $('#pizzaImage').mousemove(
+            function(e)
+            {
+                var tooltipTop = $('#pizzaImage').offset().top - 75 + e.offsetY;
+                var tooltipLeft = $('#pizzaImage').offset().left - 125 + e.offsetX ;
+                console.log(tooltipTop,tooltipLeft);
+                $('#tooltip').css('top', tooltipTop).css('left', tooltipLeft);
+                $('#tooltip').html('This is not the pizza in question.');
+            }
+        )
+
+
+        $('#pizzaImage').mouseenter(
+            function()
+            {
+                $('#tooltip').show();
+            }
+        )
+
+
+        $('#pizzaImage').mouseleave(
+            function()
+            {
+                $('#tooltip').hide();
+            }
+        )
+        
+
+</script>
+</html>
