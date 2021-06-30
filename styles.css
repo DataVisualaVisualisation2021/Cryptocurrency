@@ -1,4 +1,4 @@
-
+h1 {text-align: center;}
 
 .body
 {
@@ -79,6 +79,12 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.twoColumns2
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
 }
 
 
