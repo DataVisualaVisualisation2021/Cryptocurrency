@@ -126,3 +126,23 @@ h1 {text-align: center;}
   padding-right: 10px;
   padding-left: 0px;
 }
+
+.threeColumns
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.info
+{
+    border: 2px solid black;
+    margin: 50px;
+    width:350px;
+    height:350px;
+    margin: 5px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+
+}
